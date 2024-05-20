@@ -1,7 +1,2 @@
 # fastcampus-jenkins
 # fastcampus-jenkins
-
-
-
-
-
