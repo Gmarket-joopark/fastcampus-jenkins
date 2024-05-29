@@ -20,6 +20,8 @@
 
 * JENKINS_HOME 변경후 재시작
     export JENKINS_HOME=~/practice/jenkins_home
+//export JENKINS_HOME=~/jenkiscfg/jenkins_home
+
     java -jar jenkins.war --httpPort=8080
 
 # jenkins 재시작
