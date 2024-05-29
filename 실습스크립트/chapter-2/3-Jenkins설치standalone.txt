@@ -27,3 +27,39 @@
 
 # 환경 변수 삭제
     unset JENKINS_HOME
+
+
+#########################
+# rancher 설치 
+# docker 환경설정하기
+# 쉘 재실행
+source ~/.zshrc
+docker pull ubuntu
+
+docker run -it --name ubuntu-container ubuntu /bin/bash
+docker container restart ubuntu-container
+docker container exec -it ubuntu-container /bin/bash
+
+###### ubuntu /bin/bash #####
+cat /etc/os-release
+
+sudo apt update
+sudo apt install openjdk-17-jre-headless
+java -version
+ 
+https://www.jenkins.io/download/
+
+sudo apt install curl
+
+curl -OL -k https://get.jenkins.io/war-stable/2.452.1/jenkins.war
+
+java -jar jenkins.war --httpPort=8080
+
+ https://pkg.jenkins.io/debian-stable/
+
+ docker stop ubuntu-container
+docker container rm ubuntu-container
+
+ 
+
+docker run -it --name ubuntu-container -p 80:8080 ubuntu /bin/bash
