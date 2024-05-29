@@ -1,3 +1,7 @@
+//* rancher에 ubuntu 설치 
+// * 우분투 컨테이너에 docker 설치
+// 
+
 * 실습 준비
   - 이미 docker 를 설치 했다고 가정
   - 만약 projects docker network 이 없다면 생성 (chapter1에서 만들었었음)
