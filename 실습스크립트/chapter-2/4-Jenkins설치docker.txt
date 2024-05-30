@@ -7,6 +7,7 @@
   - 만약 projects docker network 이 없다면 생성 (chapter1에서 만들었었음)
 
     docker network create practice
+// docker network create jenkis-network
 
 * jenkins docker container 생성
 
@@ -17,6 +18,15 @@
                   -v ${HOME}/.jenkins:/var/jenkins_home \
                   --network practice \
                   jenkins/jenkins:lts-jdk17
+
+    docker run -d --name jenkins --hostname=jenkins \
+                  -p 8080:8080 -p 50000:50000 \
+                  -e TZ=Asia/Seoul \
+                  -v /Users/joopark/practice/jenkins_home:/var/jenkins_home \
+                  -v /Users/joopark/practice/key:/key \
+                  --network jenkins-network \
+                  jenkins/jenkins:lts
+
 
 * jenkins docker container 를 재시작 가능하도록 변경
 
