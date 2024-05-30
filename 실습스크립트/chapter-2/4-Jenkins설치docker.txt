@@ -26,7 +26,7 @@
                   -v /Users/joopark/practice/key:/key \
                   --network jenkins-network \
                   jenkins/jenkins:lts
-
+ docker run -d --name jenkins --hostname=jenkins -p 8080:8080 -p 50000:50000 -e TZ=Asia/Seoul   -v C:/Users\j0par/practce/practice/key:/key  -v C:/Users\j0par/practce/.jenkins:/var/jenkins_home --network practice jenkins/jenkins:lts-jdk17
 
 * jenkins docker container 를 재시작 가능하도록 변경
 
@@ -38,6 +38,9 @@
                   -v ${HOME}/.jenkins:/var/jenkins_home \
                   --network practice \
                   jenkins/jenkins:lts-jdk17
+
+ docker run -d --name jenkins --hostname=jenkins -p 8080:8080 -p 50000:50000 -e TZ=Asia/Seoul   -v C:/Users\j0par/practce/practice/key:/key --restart=on-failure -v C:/Users\j0par/practce/.jenkins:/var/jenkins_home --network practice jenkins/jenkins:lts-jdk17
+
 
 * jenkins docker 컨테이너 내에서 docker 를 실행 가능하도록
   host 의 docker 환경과 연결 - 실습용으로 jenkins docker container 를 root 권한으로 실행
