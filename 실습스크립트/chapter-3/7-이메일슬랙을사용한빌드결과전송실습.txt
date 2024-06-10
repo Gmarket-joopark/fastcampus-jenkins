@@ -37,7 +37,7 @@
     - 좌측 More > App 클릭
     - Jenkins CI 검색후 Add 클릭
     - Add to Slack 클릭후 메시지를 받을 Channel 선택
-    - Team Subdomain 과 Integration Token Credential ID 기억
+    - Team Subdomain 과 Integration Token Credential ID 기억 inw-hackteam sG67rFL7NlXe7FUB1TOD3ZKW
 
   - Jenkins 설정
     - Slack 플러그인 설치
