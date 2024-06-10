@@ -1,4 +1,4 @@
-* 빌드 스텝 > Execute shell 추가 > 2130
+* 빌드 스텝 > Execute shell 추가 > 2130 22:41
   echo $WORKSPACE
   echo $BUILD_NUMBER
   echo $JOB_URL
