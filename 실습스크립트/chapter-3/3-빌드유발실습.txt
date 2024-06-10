@@ -8,7 +8,7 @@
   - practice1 구성 > 빌드 유발 > Poll SCM
     - * * * * * 지정후 빌드
   - 빌드가 동작 하지 않음을 확인
-  - Github Repo 에 변경 커밋 추가
+  - Github Repo 에 변경 커밋 추가 //
   - 빌드 수행 확인
 
 * GitHub hook trigger for GITScm polling 설정
