@@ -24,6 +24,21 @@
        user@server_1:/config/
 
   - 만약 server_1 이 안 떠 있다면 다음 docker 명령을 PC 에서 실행후 다시 빌드 진행
+>>>>>>>>>>>>>>>>>>>.실습에러
+//jenkins@jenkins:/key$ ssh -i /key/private.key -p 2222 /var/jenkins_home/workspace/practice2_02/projects/spring-app/build/libs/demo-0.0.1-SNAPSHOT.jar user@server_1:/config/
+ssh: Could not resolve hostname /var/jenkins_home/workspace/practice2_02/projects/spring-app/build/libs/demo-0.0.1-snapshot.jar: Name or service not known
+jenkins@jenkins:/key$ 
+//docker run -d --name=server_1 \         
+       -e PUBLIC_KEY_FILE=/key/public.key \
+       -p 12222:2222 -p 18080:8080 \
+       -v /var/run/docker.sock:/var/run/docker.sock  \
+       -v ~/practice/key:/key \
+       -e SUDO_ACCESS=true \
+       -e USER_NAME=user  \
+       --hostname=server_1 \
+       --network=jenkins-network \
+       lscr.io/linuxserver/openssh-server:latest
+//4e05063238c0   jenkins-network   bridge    local
 
   docker run -d --name=server_1 \
        -e PUBLIC_KEY_FILE=/key/public.key \
