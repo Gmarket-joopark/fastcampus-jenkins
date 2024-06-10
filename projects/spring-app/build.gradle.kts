@@ -1,5 +1,4 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-// import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 
 plugins {
@@ -9,7 +8,6 @@ plugins {
     kotlin("jvm") version "1.6.21"
     kotlin("plugin.spring") version "1.6.21"
     jacoco
-    // jacoco
 }
 
 group = "com.fastcampus"
@@ -23,7 +21,6 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    // implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
@@ -45,8 +42,3 @@ configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
        reporter(ReporterType.CHECKSTYLE)
    }
 }
-// configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
-//    reporters {
-//        reporter(ReporterType.CHECKSTYLE)
-//    }
-// }
