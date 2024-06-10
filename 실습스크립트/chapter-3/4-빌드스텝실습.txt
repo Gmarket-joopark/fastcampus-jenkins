@@ -54,7 +54,7 @@ jenkins@jenkins:/key$
 * 빌드 스텝 > Execute shell 을 추가하여 userContent 로 파일 copy
 
     cp ${WORKSPACE}/projects/spring-app/README.md ${JENKINS_HOME}/userContent/README.html
-
+// cp /var/jenkins_home/workspace/practice2_02/projects/spring-app/README.md ${JENKINS_HOME}/userContent/README.html
   - 빌드 실행후 다음 URL 로 접근하여 확인
 
     http://admin:토큰@localhost:8080/userContent/README.md
