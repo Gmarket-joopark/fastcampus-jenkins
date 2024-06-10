@@ -40,13 +40,13 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-// configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
-//    reporters {
-//        reporter(ReporterType.CHECKSTYLE)
-//    }
-// }
 configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
    reporters {
        reporter(ReporterType.CHECKSTYLE)
    }
 }
+// configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
+//    reporters {
+//        reporter(ReporterType.CHECKSTYLE)
+//    }
+// }
