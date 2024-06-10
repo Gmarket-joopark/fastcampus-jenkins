@@ -18,7 +18,7 @@
     - Note : jenkins 입력
     - repo / admin:repo_hook 선택
     - Generate token 이후 출력된 토큰 기재
-
+token
   - Jenkins 관리 > System > Github Servers > Add Github Servers
     - Name : github
     - Credentials > Add > Jenkins
@@ -37,9 +37,13 @@
     - Authentication Token 에 build 토큰 설정
     - 저장
   - curl "http://localhost:8080/job/practice1/build?token=build" 호출
+//- curl "http://localhost/job/practice1/build?token=build" 호출
     - 인증 에러 확인
   - 계정 > 설정 으로 이동 하여 API Token 발급
     - http://localhost:8080/user/admin/configure
     - Add new token
-  - curl --user admin:토큰 "http://localhost:8080/job/practice1/build?token=build" 호출
+  - curl --user admin:토큰 "http://localhost:8080/job/practice2_02/build?token=build" 호출
+//curl --user admin:token "http://localhost:8080/job/practice2_02/build?token=build"
+//curl "http://admin:token@localhost:8080/job/practice2_02/build?token=build"
+
   - 빌드 실행 확인
