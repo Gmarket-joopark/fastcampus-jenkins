@@ -21,6 +21,8 @@ Traffic was successfully tunneled to the ngrok agent, but the agent failed to es
 dial tcp 127.0.0.1:80: connect: connection refused
 ==> 호스트 파일에 추가하고
 http://e7da-175-114-72-151.ngrok-free.app.localhost/
+깃허브 웨후크등록 확인
+http://e7da-175-114-72-151.ngrok-free.app.localhostghprbhook/ (issue_comment and pull_request)
 
   - 생성된 DNS 주소 확인
     - http://localhost:4040/status
