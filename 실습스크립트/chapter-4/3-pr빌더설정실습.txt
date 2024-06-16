@@ -4,6 +4,7 @@
   - jenkins 관리 > System > Github Pull Request Builder
   - Github Server API URL : https://api.github.com
   - Jenkins URL override : https://[각자의고유호스트명].ngrok-free.app/
+//https://e7da-175-114-72-151.ngrok-free.app
     - 다른 webhook 지원 플러그인과 다르게, 이 플러그인은 호스트명쪽만 변경 가능..
     - http://localhost:4040 에서 확인 - 만약 ngrok docker 컨테이너가 떠 있지 않으면 앞 클립 참고하여 재시작
   - Shared secret 에 임의의 암호 정의해 넣음 (Github 가 호출할때 이 암호를 사용하여 Jenkins 호출)
