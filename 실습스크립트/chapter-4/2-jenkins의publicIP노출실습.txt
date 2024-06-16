@@ -19,7 +19,8 @@ ERR_NGROK_8012
 Traffic was successfully tunneled to the ngrok agent, but the agent failed to establish a connection to the upstream web service at localhost:80. The error encountered was:
 
 dial tcp 127.0.0.1:80: connect: connection refused
-
+==> 호스트 파일에 추가하고
+http://e7da-175-114-72-151.ngrok-free.app.localhost/
 
   - 생성된 DNS 주소 확인
     - http://localhost:4040/status
