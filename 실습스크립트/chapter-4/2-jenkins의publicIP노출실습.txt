@@ -6,11 +6,10 @@
 
   - ngrok docker container 실행
 
-  docker run -d --rm --name ngrok --hostname ngrok \
-         -e NGROK_AUTHTOKEN=2hx2ZFIg8DnvrRGOfEuPbVW3oMF_3t9dfLDd9VTjB3fNzn4RH \  
-         --network=jenkins-network \
-         -p 4040:4040 \
-         ngrok/ngrok:latest http http://localhost:80
+  docker run -d --rm --name ngrok --hostname ngrok -e NGROK_AUTHTOKEN=2hx2ZFIg8DnvrRGOfEuPbVW3oMF_3t9dfLDd9VTjB3fNzn4RH --network=jenkins-network -p 4040:4040 ngrok/ngrok:latest http http://localhost:80
+
+docker run -d --rm --name ngrok --hostname ngrok -e NGROK_AUTHTOKEN=2hx2ZFIg8DnvrRGOfEuPbVW3oMF_3t9dfLDd9VTjB3fNzn4RH --network=jenkins-network -p 4040:4040 ngrok/ngrok:latest http http://e7da-175-114-72-151.ngrok-free.app.localhost:80
+
 https://d118-175-114-72-151.ngrok-free.app
 https://e7da-175-114-72-151.ngrok-free.app
 
@@ -23,6 +22,7 @@ dial tcp 127.0.0.1:80: connect: connection refused
 http://e7da-175-114-72-151.ngrok-free.app.localhost/
 깃허브 웨후크등록 확인
 http://e7da-175-114-72-151.ngrok-free.app.localhostghprbhook/ (issue_comment and pull_request)
+http://7e2e-175-114-72-151.ngrok-free.app.localhost/github-webhook/ -> failed
 
   - 생성된 DNS 주소 확인
     - http://localhost:4040/status
